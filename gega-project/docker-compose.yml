@@ -1,0 +1,10 @@
+services:
+  tailwind:
+    image: node:20 # "alpine" ibaresini sildik, her modülü destekleyen tam sürümü koyduk.
+    container_name: tailwind_watcher
+    working_dir: /app
+    volumes:
+      - ./:/app
+    tty: true
+    stdin_open: true # Konteynerin kapanmasını engelleyecek asıl kilit komut!
+    command: sh -c "npm install && npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"

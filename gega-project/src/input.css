@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+@import "tailwindcss";
+
+
+@theme {
+  
+  --font-gemunu: "Gemunu Libre", sans-serif;
+  --font-open: "Open Sans", sans-serif;
+
+  --spacing-128: 32rem;
+  --text-h2: 1.5rem;
+  --text-h2--line-height:2rem;
+  --tracking-h2: 0.05em;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  line-height: var(--text-h2--line-height);
+  letter-spacing: var(--tracking-h2);
+}
