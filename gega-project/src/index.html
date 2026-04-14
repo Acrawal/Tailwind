@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../dist/output.css" rel="stylesheet"></head>
-<body>
+<body class="font-open dark">
+
+    <!--Dark light TOGGLE-->
+    <div class="absolute top-1 left-5 cursor-pointer text-lg">
+        <i class="class="fa-solid fa-sun text-white" id="sun"></i>
+        <i class="class="fa-solid fa-moon text-black hidden" id="moon"></i>
+    </div>
 
     <!--Header Section--> 
     <header class="bg-black py-6 lg:py-12 text-gray-200 font-gemunu uppercase">
@@ -48,7 +54,7 @@
     </header>
 
     <!--Hero Section-->
-    <section class="h-64 md:h-96 lg:h-128 group relative">
+    <section class="md:h-96 lg:h-128 group relative">
 
         <!--Hero Image-->
         <img src="/images/batman.jpg" alt="Main Image" class="h-full w-full object-cover">
@@ -103,11 +109,11 @@
     <!--Movies Section-->
     <section class="py-24 bg-black">
         <!--Movies Content-->
-        <div class="container flex space-x-16">
+        <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
             <!--Left Content-->
             <div class="basis-2/3 ">
                 <!--Titles-->
-                <div class="flex space-x-2 divide-x divide-red-500 divide-opacity-50 mb-8">
+                <div class="flex space-x-2 divide-x divide-red-500 divide-opacity-50 mb-8 pl-10 lg:pl-0">
                     <h2 class="text-red-500 "><a href="#">Latest</a></h2>
                     <h2 class="text-gray-200 pl-2 hover:text-red-500 duration-500"><a href="#">Popular</a></h2>
                     <h2 class="text-gray-200 pl-2 hover:text-red-500 duration-500"><a href="#">Best</a></h2>
@@ -116,9 +122,9 @@
                 <!--Images Container-->
                 <div class="flex flex-wrap">
                     <!--Image 1-->
-                    <div class="group relative overflow-hidden basis-1/3">
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
                         <!--Image-->
-                        <img src="/images/mv1.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <img src="../images/mv1.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
                         <!--Image Detail Container-->
                         <div class="absolute px-6 bottom-8">
                             <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">Oblivion</h3>
@@ -131,9 +137,9 @@
                         </div>
                     </div>
                     <!--Image 2-->
-                    <div class="group relative overflow-hidden basis-1/3">
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
                         <!--Image-->
-                        <img src="/images/mv2.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <img src="../images/mv2.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
                         <!--Image Detail Container-->
                         <div class="absolute px-6 bottom-8">
                             <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">INTO THE WILD</h3>
@@ -146,9 +152,9 @@
                         </div>
                     </div>
                     <!--Image 3-->
-                    <div class="group relative overflow-hidden basis-1/3">
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
                         <!--Image-->
-                        <img src="/images/mv3.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <img src="../images/mv3.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
                         <!--Image Detail Container-->
                         <div class="absolute px-6 bottom-8">
                             <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">MULLHOLLAND DRIVE</h3>
@@ -161,9 +167,9 @@
                         </div>
                     </div>
                     <!--Image 4-->
-                    <div class="group relative overflow-hidden basis-1/3">
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
                         <!--Image-->
-                        <img src="/images/mv4.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <img src="../images/mv4.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
                         <!--Image Detail Container-->
                         <div class="absolute px-6 bottom-8">
                             <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">Oblivion</h3>
@@ -176,9 +182,9 @@
                         </div>
                     </div>
                     <!--Image 5-->
-                    <div class="group relative overflow-hidden basis-1/3">
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
                         <!--Image-->
-                        <img src="/images/mv5.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <img src="../images/mv5.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
                         <!--Image Detail Container-->
                         <div class="absolute px-6 bottom-8">
                             <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">Oblivion</h3>
@@ -191,9 +197,9 @@
                         </div>
                     </div>
                     <!--Image 6-->
-                    <div class="group relative overflow-hidden basis-1/3">
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
                         <!--Image-->
-                        <img src="/images/mv6.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <img src="../images/mv6.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
                         <!--Image Detail Container-->
                         <div class="absolute px-6 bottom-8">
                             <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">Oblivion</h3>
@@ -205,6 +211,37 @@
                             </div>
                         </div>
                     </div>
+                    <!--Image 7-->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+                        <!--Image-->
+                        <img src="../images/mv1.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <!--Image Detail Container-->
+                        <div class="absolute px-6 bottom-8">
+                            <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">Oblivion</h3>
+                            <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-2 transition duration-500 text-gray-200">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, blanditiis.</p>
+                            <!--Icons Container-->
+                            <div class="flex space-x-8 text-gray-200 opacity-0 translate-y-4 group-hover:translate-y-2 group-hover:opacity-100 transition duration-500">
+                                <a class="hover:text-red-500 " href="#"><i class="fa-solid fa-play"></i></a>
+                                <a class="hover:text-red-500 " href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Image 8-->
+                    <div class="group relative basis-1/3 md:basis-1/4 lg:basis-1/3 overflow-hidden hidden md:block lg:hidden">
+                        <!--Image-->
+                        <img src="../images/mv2.jpg" class="group-hover:scale-110 group-hover:opacity-50 transition duration-500">
+                        <!--Image Detail Container-->
+                        <div class="absolute px-6 bottom-8">
+                            <h3 class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 transition duration-500">Oblivion</h3>
+                            <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-2 transition duration-500 text-gray-200">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, blanditiis.</p>
+                            <!--Icons Container-->
+                            <div class="flex space-x-8 text-gray-200 opacity-0 translate-y-4 group-hover:translate-y-2 group-hover:opacity-100 transition duration-500">
+                                <a class="hover:text-red-500 " href="#"><i class="fa-solid fa-play"></i></a>
+                                <a class="hover:text-red-500 " href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <!--Right Content-->
@@ -212,9 +249,9 @@
                 <!--Title-->
                 <h2 class="text-gray-200  mb-8">Hot News</h2>
                 <!--News Container-->
-                <div class="flex flex-col h-full pb-16 justify-between">
+                <div class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
                     <!--Item-->
-                    <div class="flex items-center group">
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
                         <!--News Image Container-->
                         <div class="basis-1/3 h-full">
                             <img src="../images/new1.jpg" class="h-full w-full object-cover">
@@ -226,7 +263,7 @@
                         </div>
                     </div>
                     <!--Item-->
-                    <div class="flex items-center group">
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
                         <!--News Image Container-->
                         <div class="basis-1/3 h-full">
                             <img src="../images/new2.jpg" class="h-full w-full object-cover" alt="">
@@ -238,7 +275,7 @@
                         </div>
                     </div>
                     <!--Item-->
-                    <div class="flex items-center group">
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
                         <!--News Image Container-->
                         <div class="basis-1/3 h-full">
                             <img src="../images/new3.jpg" class="h-full w-full object-cover" alt="">
@@ -250,7 +287,7 @@
                         </div>
                     </div>
                     <!--Item-->
-                    <div class="flex items-center group">
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
                         <!--News Image Container-->
                         <div class="basis-1/3 h-full">
                             <img src="../images/new4.jpg" class="h-full w-full object-cover" alt="">
@@ -262,7 +299,7 @@
                         </div>
                     </div>
                     <!--Item-->
-                    <div class="flex items-center group">
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
                         <!--News Image Container-->
                         <div class="basis-1/3 h-full">
                             <img src="../images/new5.jpg" class="h-full w-full object-cover" alt="">
@@ -277,7 +314,185 @@
             </div>
         </div>
     </section>
+    
+    <!--Matrix Section-->
+    <section class="bg-white">
+    <!--Matrix Section Container-->
+    <div class="container flex items-center justify-center relative pl-10 lg:pl-0">
+        <!--Left Content-->
+        <div class="hidden md:block md:basis-1/3 lg:basis-1/2">
+            <img src="../images/matrix.png" alt="" class="lg:absolute lg:bottom-0">
+        </div>
+        <!--Right Content-->
+        <div class="md:basis-2/3 lg:basis-1/2">
+            <!--Right Content Container-->
+            <div class="flex flex-col justify-center py-10 w-3/4 md:w-full">
+                <h3 class="tracking-wider text-yellow-200">ACTION, DRAMA, THRILLER</h3>
+                <h2 class="mb-2">Matrix Reloaded</h2>
+                <p text-sm mb-2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore iusto, facilis maxime ea pariatur animi laboriosam repellendus officiis deserunt sequi.</p>
+                <h3 class="tracking-wider text-red-500">8 wins 34 nominations</h3>
+            </div>
+        </div>
 
+        <!--Oldie-->
+        <div class="left-10 absolute -top-12 lg:left-0 w-24 h-24 bg-yellow-200 rounded-full text-center flex items-center">
+            <p class="font-gemunu uppercase font-bold text-xl text-red-500 -rotate-45">Oldie & Goldie</p>
+        </div>
+    </div>
+    </section>
+
+    <!--Post Section-->
+    <section class="py-24 bg-black text-gray-200">
+        <!--Container-->
+        <div class="container px-10 lg:px-0">
+            <!--Title-->
+            <h2 class="text-red-500"><a href="">Popular Posts</a> </h2>
+
+            <!--Grid Area-->
+            <div class="grid grid-cols-6 gap-10">
+                <!--Item 1-->
+                <div class="col-span-6 md:col-span-3 border border-red-500">
+                    <!--Item 1 Header-->
+                    <div class="border-b border-red-500 p-4 flex items-center justify-between">
+                        <h3>ACCUSANTIUM DOLOREMQUE LAUDANT</h3>
+                        <img src="../images/userava1.jpg" alt="" class="rounded-full">
+                    </div>
+                    <!--Item 1 Para-->
+                    <p class="p-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nobis repellendus excepturi veniam alias beatae, impedit enim optio odio dignissimos.</p>
+                    <!--Item 1 Footer-->
+                <div class="border-t border-red-500 p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                    <p>ON DEC 17, 2022</p>
+                    <div class="flex items-center justify-center space-x-1">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>12</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>09</p>
+                    </div>
+                </div>
+                
+                </div>
+                <!--Item 2-->
+                <div class="col-span-6 md:col-span-3 border border-red-500">
+                    <!--Item 1 Header-->
+                    <div class="border-b border-red-500 p-4 flex items-center justify-between">
+                        <h3>ACCUSANTIUM DOLOREMQUE LAUDANT</h3>
+                        <img src="../images/userava2.jpg" alt="" class="rounded-full">
+                    </div>
+                    <!--Item 1 Para-->
+                    <p class="p-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nobis repellendus excepturi veniam alias beatae, impedit enim optio odio dignissimos.</p>
+                    <!--Item 1 Footer-->
+                <div class="border-t border-red-500 p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                    <p>ON DEC 17, 2022</p>
+                    <div class="flex items-center justify-center space-x-1">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>12</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>09</p>
+                    </div>
+                </div>
+                
+                </div>
+                <!--Item 3-->
+                <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-red-500">
+                    <!--Item 1 Header-->
+                    <div class="border-b border-red-500 p-4 flex items-center justify-between">
+                        <h3>ACCUSANTIUM DOLOREMQUE LAUDANT</h3>
+                        <img src="../images/userava3.jpg" alt="" class="rounded-full">
+                    </div>
+                    <!--Item 1 Para-->
+                    <p class="p-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nobis repellendus excepturi veniam alias beatae, impedit enim optio odio dignissimos.</p>
+                    <!--Item 1 Footer-->
+                <div class="border-t border-red-500 p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                    <p>ON DEC 17, 2022</p>
+                    <div class="flex items-center justify-center space-x-1">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>12</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>09</p>
+                    </div>
+                </div>
+                
+                </div>
+                <!--Item 4-->
+                <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-red-500">
+                    <!--Item 1 Header-->
+                    <div class="border-b border-red-500 p-4 flex items-center justify-between">
+                        <h3>ACCUSANTIUM DOLOREMQUE LAUDANT</h3>
+                        <img src="../images/userava4.jpg" alt="" class="rounded-full">
+                    </div>
+                    <!--Item 1 Para-->
+                    <p class="p-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nobis repellendus excepturi veniam alias beatae, impedit enim optio odio dignissimos.</p>
+                    <!--Item 1 Footer-->
+                <div class="border-t border-red-500 p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                    <p>ON DEC 17, 2022</p>
+                    <div class="flex items-center justify-center space-x-1">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>12</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>09</p>
+                    </div>
+                </div>
+                
+                </div>
+                <!--Item 5-->
+                <div class="hidden lg:block lg:col-span-2 border border-red-500">
+                    <!--Item 1 Header-->
+                    <div class="border-b border-red-500 p-4 flex items-center justify-between">
+                        <h3>ACCUSANTIUM DOLOREMQUE LAUDANT</h3>
+                        <img src="../images/userava5.jpg" alt="" class="rounded-full">
+                    </div>
+                    <!--Item 1 Para-->
+                    <p class="p-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nobis repellendus excepturi veniam alias beatae, impedit enim optio odio dignissimos.</p>
+                    <!--Item 1 Footer-->
+                <div class="border-t border-red-500 p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                    <p>ON DEC 17, 2022</p>
+                    <div class="flex items-center justify-center space-x-1">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>12</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>09</p>
+                    </div>
+                </div>
+                
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="bg-black text-gray-200">
+        <!--Footer Container-->
+        <div class="container flex flex-col md:flex-row px-10 lg:px-0 pb-8">
+            <!--Left-->
+            <div class="basis-1/3">
+                <a href="#" class="text-2xl lg:text-3xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-red-600 to-gray-200">GEGA</a>
+                <p class="text-sm mt-2">2022 ArinSOFT No &copy; COPYRIGHT</p>
+            </div>
+            <!--Middle-->
+            <div class="basis-1/3">
+                <h2 class="mb-2 text-red-500">LINKS</h2>
+                <div class="grid grid-cols-5 gap-2 uppercase">
+                    <a class="col-span-2 hover:text-yellow-300 duration-500" href="#">Movies</a>
+                    <a class="col-span-2 hover:text-yellow-300 duration-500" href="#">celebrities</a>
+                    <a class="col-span-2 hover:text-yellow-300 duration-500" href="#">Blog</a>
+                    <a class="col-span-2 hover:text-yellow-300 duration-500" href="#">News</a>
+                    <a class="col-span-2 hover:text-yellow-300 duration-500" href="#">Abput</a>
+                </div>
+            </div>
+            <!--Right-->
+            <div class="basis-1/3">
+                <h2 class="mb-2 text-red-500">FOLLOW US</h2>
+                <form action="" class="flex">
+                    <input class="py-1 px-2 bg-transparent border border-red-500 placeholder:text-xs outline-none" placeholder="TYPE YOUR EMAIL" type="text">
+                    <button class="py-1 px-2 border border-red-500 bg-red-500 font-gemunu uppercase">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
     
 
 </body>
